@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Meeting Timer</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="bower_components/stopwatch/css/jq.stopwatch.min.css">
+<!-- include jQuery before you include the stopwatch, if you have not already done so -->
+	
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/stopwatch/js/jq.stopwatch.js"></script>
+    <style type="text/css">
+    body {
+      background:#eae9e6;
+      color:#222;
+      font-family:helvetica, arial, sans-serif;
+      padding:40px;
+    }
+    h1 {
+    	text-align: center;
+    }
+    h3 {
+    	color:#5f5f5f;
+    }
+    #treasure{
+    	background-color: #5a6a70;
+    }
+    #ministry{
+    	background-color: #c18626;
+    }
+    #living {
+    	background-color: #961526;
+    }
+
+    .row h2 {
+    	color:white;
+    }
+    #title{
+    	background-color: #4a6da7;
+    }
+    .jumbotron h1{
+    	color: white;
+    }
+
+
+  </style>
+  </head>
+  <body>
+ <div class="container">
+	<div class="jumbotron" id="title">
+		<h1>Meeting timer!</h1>
+		<div class="row" class="text-center">
+		<div class="col-sm-6 col-sm-offset-4">
+			<h2>Total Meeting timer</h3>
+			<div id="myStopwatch11"></div>
+		</div>
+	</div>	
+	</div>
+	<div class="row" class="text-center">
+		<div class="col-sm-6 col-sm-offset-4">
+			<h3>Opening Comments 3min</h3>
+			<div id="myStopwatch"></div>
+		</div>
+	</div>
+
+	<div class ='row' class="text-center">
+		<div class='jumbotron' style="padding:20px" id='treasure'><h2>Treasures from God's Word</h2></div>
+		<div class='col-sm-4'>
+			<h3>Part one! 10min</h3>
+			<div id="myStopwatch1"></div>
+		</div>
+		<div class='col-sm-4'>
+			<h3>Part two! 8min</h3>
+			<div id="myStopwatch2"></div>
+		</div>
+		<div class='col-sm-4'>
+			<h3>Bible Reading! 4min</h3>
+			<div id="myStopwatch3"></div>
+		</div>
+	</div>
+	<div class ='row' class="text-center">
+		<div class='jumbotron' id="ministry" style="padding:20px"><h2>Apply Yourself To the Field Ministry</h2></div>
+		<div class='col-sm-4'>
+			<h3>Initial Call! 2min</h3>
+			<div id="myStopwatch4"></div>
+		</div>
+		<div class='col-sm-4'>
+			<h3>Return Visit! 4min</h3>
+			<div id="myStopwatch5"></div>
+		</div>
+		<div class='col-sm-4'>
+			<h3>Bible Study! 4min</h3>
+			<div id="myStopwatch6"></div>
+		</div>
+	</div>
+	<div class ='row' class="text-center">
+		<div class='jumbotron' id="living" style="padding:20px"><h2>Living As Christians</h2></div>
+		<div class='col-sm-4'>
+			<h3>Part 1</h3>
+			<div id="myStopwatch7"></div>
+		</div>
+		<div class='col-sm-4'>
+			<h3>Part 2</h3>
+			<div id="myStopwatch8"></div>
+		</div>
+		<div class='col-sm-4'>
+			<h3>Congregation Bible Study</h3>
+			<div id="myStopwatch9"></div>
+		</div>
+	</div>	
+	<div class="row" class="text-center">
+		<div class="col-sm-6 col-sm-offset-4">
+			<h3>Review/Concluding comments. 3min</h3>
+			<div id="myStopwatch10"></div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+  $(function() {
+    $('#myStopwatch, #myStopwatch1 , #myStopwatch2 , #myStopwatch3, #myStopwatch4, #myStopwatch5, #myStopwatch6, #myStopwatch7, #myStopwatch8, #myStopwatch9, #myStopwatch10, #myStopwatch11').stopwatch('theme-1');
+  });
+</script>
+
+
+  </body>
+</html>
